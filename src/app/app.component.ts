@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiproductoService } from 'src/app/Servicios/apiproducto.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Productos-Crud';
+
+  constructor(private ApiproductoService: ApiproductoService){
+
+  }
 }
