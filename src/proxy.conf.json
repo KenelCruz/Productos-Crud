@@ -1,0 +1,7 @@
+{
+  "/api/*": {
+      "target": "https://localhost:44322/api/Producto",
+      "secure": false,
+      "logLevel": "debug"
+  }
+}
