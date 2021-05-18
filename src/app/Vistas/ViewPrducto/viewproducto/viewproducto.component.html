@@ -1,0 +1,31 @@
+<app-navar></app-navar>
+
+
+
+<div class="center-align">
+  <h3 style="color:blanchedalmond">Productos</h3> <br>
+  <button type="button" class="btn btn-primary" (click)="nuevoproducto()">Nuevo Prducto</button>
+  <br/><br>
+</div>
+  <table class="table table-hover table-dark table-striped table-bordered shadow-lg p-3 mb-5 bg-body rounded">
+    <thead>
+      <tr>
+        <th scope="col">Codigo</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripcion</th>
+        <th scope="col">Costo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prod of productos" (click)="editarproducto(prod.codigo)" >
+        <th scope="row">{{prod.codigo}}</th>
+        <td>{{prod.nombre}}</td>
+        <td>{{prod.descripcion}}</td>
+        <td>{{prod.costo}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+
